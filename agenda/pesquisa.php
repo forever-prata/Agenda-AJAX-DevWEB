@@ -15,7 +15,6 @@ if ($busca != " "){
         }
         
     }
-    echo json_encode($cont);
 }
 
 ?>
