@@ -30,10 +30,10 @@
     <br>
     
 
-    <form action="post" name="form" id="form">
+    <form action="post" name="form" id="pesquisa">
         <fieldset>
-            <input type="text" id="busca" name="busca">
-            <input type="submit" id="pesquisa">
+            <input type="search" id="busca" name="busca">
+            <button class='btn btn-primary' type="submit">Filtrar</button>
         </fieldset>
     </form>
 

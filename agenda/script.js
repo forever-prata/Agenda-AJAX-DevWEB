@@ -1,5 +1,5 @@
 window.onload = (function (){
-    document.getElementById('form').addEventListener('submit',function(ev){
+    document.getElementById('pesquisa').addEventListener('submit',function(ev){
         ev.preventDefault();
         carregaDados(document.getElementById('busca').value);
     })
@@ -10,7 +10,7 @@ function carregaDados(busca){
     var xhttp = new XMLHttpRequest(); 
     xhttp.onload = function() {
         ourData = JSON.parse(xhttp.responseText);
-        montaTabela(dados);
+        montaTabela(ourData);
     }
     xhttp.open("POST", "pesquisa.php", true);
     xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
